@@ -1,0 +1,13 @@
+{
+    "parent": "smorgasbord:item/template_goggles",
+    "textures": {
+      "0": "smorgasbord:item/equipment/wax_goggles"
+    },
+	"display": {
+		"head": {
+			"rotation": [16, 0, 0],
+			"translation": [0, 2.5, -0.25],
+			"scale": [1.85, 1.85, 2]
+		}
+	}
+}

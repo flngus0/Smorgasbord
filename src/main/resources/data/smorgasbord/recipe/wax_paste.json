@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "u#"
+  ],
+  "key": {
+    "#": "minecraft:paper",
+    "u": "minecraft:honeycomb"
+  },
+  "result": {
+    "id": "smorgasbord:wax_paste"
+  }
+}

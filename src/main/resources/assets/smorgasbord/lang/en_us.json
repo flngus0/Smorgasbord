@@ -1,0 +1,9 @@
+{
+  "item.smorgasbord.wax_paste": "Wax Paste",
+  "item.smorgasbord.wet_wipe": "Wet Wipe",
+  "item.smorgasbord.wax_goggles": "Wax Goggles",
+  "item.smorgasbord.wax_goggles.height": "Height: %s",
+  "smorgasbord.midnightconfig.title": "Smorgasbord Config",
+  "smorgasbord.midnightconfig.renderWax": "Render Waxed Blocks",
+  "smorgasbord.midnightconfig.renderWax.tooltip": "Enables or disables rendering waxed blocks when wearing Wax Goggles"
+}

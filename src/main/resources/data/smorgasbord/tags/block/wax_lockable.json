@@ -1,0 +1,27 @@
+{
+  "values": [
+    "#c:barrels",
+    "#c:chests",
+    "#c:fence_gates",
+    "#minecraft:campfires",
+    "#minecraft:crops",
+    "#minecraft:doors",
+    "#minecraft:logs",
+    "#minecraft:trapdoors",
+    "#minecraft:wooden_shelves",
+    "#minecraft:wool_carpets",
+    "minecraft:beehive",
+    "minecraft:bell",
+    "minecraft:closed_eyeblossom",
+    "minecraft:composter",
+    "minecraft:ladder",
+    "minecraft:lever",
+    "minecraft:moss_carpet",
+    "minecraft:open_eyeblossom",
+    "minecraft:pale_moss_carpet",
+    "minecraft:spawner",
+    "minecraft:tnt",
+    "minecraft:trial_spawner",
+    "minecraft:vault"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "targets": [
+    "smorgasbord:wax_goggles"
+  ],
+  "render": [
+    {
+      "type": "item",
+      "model_part": "head",
+      "display_context": "head"
+    }
+  ]
+}

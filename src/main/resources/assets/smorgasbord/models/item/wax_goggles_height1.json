@@ -1,0 +1,11 @@
+{
+    "parent": "smorgasbord:item/template_goggles",
+    "textures": {
+      "0": "smorgasbord:item/equipment/wax_goggles"
+    },
+	"display": {
+		"head": {
+			"scale": [1.85, 1.85, 1.85]
+		}
+	}
+}
