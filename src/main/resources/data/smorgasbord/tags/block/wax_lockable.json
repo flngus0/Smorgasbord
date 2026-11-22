@@ -22,6 +22,10 @@
     "minecraft:spawner",
     "minecraft:tnt",
     "minecraft:trial_spawner",
-    "minecraft:vault"
+    "minecraft:vault",
+    {
+      "id": "#combustible_depths:ignite",
+      "required": false
+    }
   ]
 }

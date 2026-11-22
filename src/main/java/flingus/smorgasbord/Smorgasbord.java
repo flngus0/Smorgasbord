@@ -4,10 +4,12 @@ import eu.midnightdust.lib.config.MidnightConfig;
 import flingus.smorgasbord.index.ModDataComponentTypes;
 import flingus.smorgasbord.index.ModItems;
 import flingus.smorgasbord.index.ModProperties;
+import flingus.smorgasbord.index.ModTags;
 import flingus.smorgasbord.item.WaxPasteItem;
 import flingus.smorgasbord.util.WaxUtil;
 import moriyashiine.strawberrylib.api.SLib;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
@@ -32,9 +34,7 @@ import net.minecraft.world.phys.Vec3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Smorgasbord implements ModInitializer {
@@ -58,6 +58,13 @@ public class Smorgasbord implements ModInitializer {
     }
 
     private void initEvents() {
+        AttackBlockCallback.EVENT.register((player, level, hand, blockPos, direction) -> {
+            if (WaxUtil.isWaxed(level, blockPos) && level.getBlockState(blockPos).is(ModTags.ATTACK_INTERACTABLE)) {
+                return InteractionResult.FAIL;
+            }
+            return InteractionResult.PASS;
+        });
+
         UseBlockCallback.EVENT.register((player, level, hand, blockHitResult) -> {
             ItemStack stack = player.getItemInHand(hand);
             if (!stack.is(ModItems.WAX_PASTE)) {
