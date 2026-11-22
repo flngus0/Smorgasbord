@@ -1,9 +1,9 @@
 # Smorgasbord
 
-## Setup
+Random knickknacks and building blocks!
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+# Feature List:
+### Block Waxing
+- Apply **Wax Paste** to most interactable and falling blocks to freeze them in place and stop player/wind charge interaction!
+- Use Wet Wipes to clean off waxed blocks.
+- Wax Goggles for seeing which blocks are already waxed while building.
