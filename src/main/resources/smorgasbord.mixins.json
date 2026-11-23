@@ -16,7 +16,8 @@
     "wax.ItemStackMixin",
     "wax.LadderBlockMixin",
     "wax.MossyCarpetBlockMixin",
-    "wax.ServerExplosionMixin"
+    "wax.ServerExplosionMixin",
+    "wax.StateHolderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

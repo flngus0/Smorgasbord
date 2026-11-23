@@ -9,6 +9,7 @@ import flingus.smorgasbord.item.WaxPasteItem;
 import flingus.smorgasbord.util.WaxUtil;
 import moriyashiine.strawberrylib.api.SLib;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
@@ -59,7 +60,7 @@ public class Smorgasbord implements ModInitializer {
 
     private void initEvents() {
         AttackBlockCallback.EVENT.register((player, level, hand, blockPos, direction) -> {
-            if (WaxUtil.isWaxed(level, blockPos) && level.getBlockState(blockPos).is(ModTags.ATTACK_INTERACTABLE)) {
+            if (!player.isCreative() && WaxUtil.isWaxed(level, blockPos) && level.getBlockState(blockPos).is(ModTags.ATTACK_INTERACTABLE)) {
                 return InteractionResult.FAIL;
             }
             return InteractionResult.PASS;
@@ -125,6 +126,8 @@ public class Smorgasbord implements ModInitializer {
                 }
             }
         });
+
+        ServerLifecycleEvents.SERVER_STARTING.register(server -> WaxUtil.frozen = true);
     }
 
     public static Identifier id(String path) {

@@ -3,15 +3,14 @@
 	"id": "smorgasbord",
 	"version": "${version}",
 	"name": "Smorgasbord",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Random knickknacks!",
 	"authors": [
-		"Me!"
+		"flingus"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/flngus0/Smorgasbord"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/smorgasbord/icon.png",
 	"environment": "*",
 	"entrypoints": {

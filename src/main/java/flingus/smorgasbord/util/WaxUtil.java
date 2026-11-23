@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WaxUtil {
+    public static boolean frozen = false;
+
     public static List<BlockPos> getConnectedPositions(BlockState mainState, BlockPos mainPos) {
         List<BlockPos> positions = new ArrayList<>();
         positions.add(mainPos);
